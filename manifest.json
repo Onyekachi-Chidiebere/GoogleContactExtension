@@ -1,0 +1,16 @@
+{
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": [
+      "<all_urls>"
+    ],   
+    "run_at":"document_end",
+    "js": ["jQuery.js","content.js"]
+  }],
+  "manifest_version": 2,
+  "name": "Google Contact Extension",
+  "permissions": ["tabs"],
+  "version": "1.0"
+}
